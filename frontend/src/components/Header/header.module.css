@@ -36,3 +36,17 @@
   display: inline-block;
 }
 
+.menu_container {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+  background-color: whitesmoke;
+  display: none;
+}
+
+.menu_container:hover .menu {
+  display: block;
+}
