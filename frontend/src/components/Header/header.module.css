@@ -1,0 +1,15 @@
+.header {
+  background: white;
+  padding: 0;
+  border-bottom: 1px solid red;
+}
+
+.header a {
+  color:  rgb(136, 0, 0);
+}
+
+.header a:hover {
+  background: red;
+  color: white;
+  cursor: pointer;
+}
