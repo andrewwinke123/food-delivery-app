@@ -34,7 +34,7 @@ export const sample_foods = [
   },
   {
     id: '4',
-    name: 'Fires',
+    name: 'Fries',
     cookTime: '10-20',
     price: 3,
     favorite: true,
