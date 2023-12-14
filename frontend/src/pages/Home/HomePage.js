@@ -1,5 +1,7 @@
 import React, { useReducer, useEffect } from 'react'
 
+import Thumbnails from '../../components/Thumbnails/Thumbnails.js'
+
 import { getAll } from '../../services/foodService.js'
 
 const initialState = { foods: [] }
@@ -21,5 +23,7 @@ export default function HomePage() {
     getAll().then(foods => dispatch({ type: 'FOODS_LOADED', payload: foods }))
   }, [])
 
-  return <div>HomePage</div>
+  return <>
+  <Thumbnails foods={foods}/>
+  </>
 }
